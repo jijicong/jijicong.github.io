@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: bazhahei's Blog
+title: cyn's Blog
 subtitle: 它在我的机器上可以很好运行!
-description: 喜欢探索未知,保持好奇心
-keywords: 21
-author: 巴扎黑
+description: 喜欢探索未知,保持好奇心!
+keywords: 
+author: cyn
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
