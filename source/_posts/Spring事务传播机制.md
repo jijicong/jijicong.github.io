@@ -5,7 +5,7 @@ tags:
 - 事务
 - Spring
 categories:
-- 事务
+- Transaction
 ---
 
 # Spring事务传播机制
