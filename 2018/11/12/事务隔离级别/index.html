@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="MySQL–事务（Transaction）一、事务的基本要素（ACID） 原子性（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。 一致性（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏。比如A向B转账，不可能A扣了钱，">
+  <meta name="description" content="MySQL–事务（Transaction）事务的基本要素（ACID） 原子性（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。 一致性（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏。比如A向B转账，不可能A扣了钱，B却">
 <meta name="keywords" content="事务,MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="事务隔离级别">
 <meta property="og:url" content="http://chenyanning.top/2018/11/12/事务隔离级别/index.html">
 <meta property="og:site_name" content="cyn&#39;s Blog">
-<meta property="og:description" content="MySQL–事务（Transaction）一、事务的基本要素（ACID） 原子性（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。 一致性（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏。比如A向B转账，不可能A扣了钱，">
+<meta property="og:description" content="MySQL–事务（Transaction）事务的基本要素（ACID） 原子性（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。 一致性（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏。比如A向B转账，不可能A扣了钱，B却">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-13T03:50:12.361Z">
+<meta property="og:updated_time" content="2018-11-13T08:01:21.154Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="事务隔离级别">
-<meta name="twitter:description" content="MySQL–事务（Transaction）一、事务的基本要素（ACID） 原子性（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。 一致性（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏。比如A向B转账，不可能A扣了钱，">
+<meta name="twitter:description" content="MySQL–事务（Transaction）事务的基本要素（ACID） 原子性（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。 一致性（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏。比如A向B转账，不可能A扣了钱，B却">
 
 
 
@@ -254,7 +254,7 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">2</span></a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">3</span></a>
   </li>
         
         
@@ -262,7 +262,7 @@
           
           <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">1</span></a>
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">2</span></a>
   </li>
         
         
@@ -270,7 +270,7 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">1</span></a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">2</span></a>
   </li>
 
       
@@ -455,20 +455,20 @@
       
 
       
-        <h1 id="MySQL–事务（Transaction）"><a href="#MySQL–事务（Transaction）" class="headerlink" title="MySQL–事务（Transaction）"></a>MySQL–事务（Transaction）</h1><h3 id="一、事务的基本要素（ACID）"><a href="#一、事务的基本要素（ACID）" class="headerlink" title="一、事务的基本要素（ACID）"></a>一、事务的基本要素（ACID）</h3><ul>
+        <h1 id="MySQL–事务（Transaction）"><a href="#MySQL–事务（Transaction）" class="headerlink" title="MySQL–事务（Transaction）"></a>MySQL–事务（Transaction）</h1><h3 id="事务的基本要素（ACID）"><a href="#事务的基本要素（ACID）" class="headerlink" title="事务的基本要素（ACID）"></a>事务的基本要素（ACID）</h3><ul>
 <li><strong>原子性</strong>（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。</li>
 <li><strong>一致性</strong>（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏。比如A向B转账，不可能A扣了钱，B却没有收到。</li>
 <li><strong>隔离性</strong>（Isolation）：同一时间，只允许一个事务请求同一数据，不同的事务之间彼此没有任何干扰。比如A正在从一张银行卡中取钱，在A取钱的过程中，B不能向这张卡转账。</li>
 <li><strong>持久性</strong>（Durability）：事务完成后，事务对数据库的所有更新将被保存到数据库，不能回滚。</li>
 </ul>
-<h3 id="二、事务的并发问题"><a href="#二、事务的并发问题" class="headerlink" title="二、事务的并发问题"></a>二、事务的并发问题</h3><ul>
+<h3 id="事务的并发问题"><a href="#事务的并发问题" class="headerlink" title="事务的并发问题"></a>事务的并发问题</h3><ul>
 <li><strong>脏读</strong>：事务A读取了事务B更新的数据，然后B回滚操作，那么A读取到的数据是脏数据。</li>
 <li><strong>不可重复读</strong>：事务A多次读取同一数据，事务B在事务A多次读取的过程中，对数据作了更新并提交，导致事务A多次读取同一数据时，结果不一致。</li>
 <li><strong>幻读</strong>：系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这就叫幻读。</li>
 </ul>
 <p><strong>小结</strong>：不可重复读和幻读很容易混淆，不可重复读侧重于修改，幻读侧重于新增和删除。解决不可重复读的问题只需要锁住满足条件的行，解决幻读需要锁表。</p>
 <a id="more"></a>
-<h3 id="三、MySQL事务隔离级别"><a href="#三、MySQL事务隔离级别" class="headerlink" title="三、MySQL事务隔离级别"></a>三、MySQL事务隔离级别</h3><table>
+<h3 id="MySQL事务隔离级别"><a href="#MySQL事务隔离级别" class="headerlink" title="MySQL事务隔离级别"></a>MySQL事务隔离级别</h3><table>
 <thead>
 <tr>
 <th style="text-align:center">事务隔离级别</th>
@@ -520,8 +520,8 @@
 <li>serializable：</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 事务A和事务B，事务A在操作数据库时，事务B只能排队等待</span><br><span class="line">- 这种隔离级别很少使用，吞吐量太低，用户体验差</span><br><span class="line">- 这种级别可以避免“幻像读”，每一次读取的都是数据库中真实存在数据，事务A与事务B串行，而不并发</span><br></pre></td></tr></table></figure>
-<h3 id="四、基本操作"><a href="#四、基本操作" class="headerlink" title="四、基本操作"></a>四、基本操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 查询当前事务级别</span><br><span class="line">mysql&gt; select @@tx_isolation;</span><br><span class="line">- 设置隔离级别</span><br><span class="line">SET [GLOBAL | SESSION] TRANSACTION ISOLATION LEVEL &lt;isolation-level&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="五、补充"><a href="#五、补充" class="headerlink" title="五、补充"></a>五、补充</h3><ul>
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 查询当前事务级别</span><br><span class="line">mysql&gt; select @@tx_isolation;</span><br><span class="line">- 设置隔离级别</span><br><span class="line">SET [GLOBAL | SESSION] TRANSACTION ISOLATION LEVEL &lt;isolation-level&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><ul>
 <li><p>事务隔离级别为读提交时，写数据只会锁住相应的行</p>
 </li>
 <li><p>事务隔离级别为可重复读时，如果检索条件有索引（包括主键索引）的时候，默认加锁方式是next-key锁；如果检索条件没有索引，更新数据时会锁住整张表。一个间隙被事务加了锁，其他事务是不能在这个间隙插入记录的，这样可以防止幻读。</p>
@@ -566,6 +566,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/13/Spring事务传播机制/" rel="prev" title="Spring事务传播机制">
+                Spring事务传播机制 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -639,7 +655,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -654,7 +670,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -671,7 +689,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -707,7 +727,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL–事务（Transaction）"><span class="nav-number">1.</span> <span class="nav-text">MySQL–事务（Transaction）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、事务的基本要素（ACID）"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、事务的基本要素（ACID）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、事务的并发问题"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、事务的并发问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、MySQL事务隔离级别"><span class="nav-number">1.0.3.</span> <span class="nav-text">三、MySQL事务隔离级别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、基本操作"><span class="nav-number">1.0.4.</span> <span class="nav-text">四、基本操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、补充"><span class="nav-number">1.0.5.</span> <span class="nav-text">五、补充</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL–事务（Transaction）"><span class="nav-number">1.</span> <span class="nav-text">MySQL–事务（Transaction）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事务的基本要素（ACID）"><span class="nav-number">1.0.1.</span> <span class="nav-text">事务的基本要素（ACID）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务的并发问题"><span class="nav-number">1.0.2.</span> <span class="nav-text">事务的并发问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL事务隔离级别"><span class="nav-number">1.0.3.</span> <span class="nav-text">MySQL事务隔离级别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本操作"><span class="nav-number">1.0.4.</span> <span class="nav-text">基本操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#补充"><span class="nav-number">1.0.5.</span> <span class="nav-text">补充</span></a></li></ol></li></ol></div>
             
 
           </div>

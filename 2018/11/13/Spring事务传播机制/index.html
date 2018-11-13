@@ -108,23 +108,25 @@
 
 
 
-  <meta name="description" content="喜欢探索未知,保持好奇心!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="cyn&#39;s Blog">
-<meta property="og:url" content="http://chenyanning.top/index.html">
+  <meta name="description" content="#Spring事务传播机制  Spring在TransactionDefinition接口中规定了7种类型的事务传播行为，它们规定了事务方法和事务方法发生嵌套调用时事务如何进行传播，即协调已经有事务标识的方法之间的发生调用时事务上下文规则（是否要有独立的事务隔离级别和锁）  ###事务传播行为种类    事务传播行为类型 说明     PROPAGATION_REQUIRED 如果当前没有事务，就">
+<meta name="keywords" content="事务,Spring">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring事务传播机制">
+<meta property="og:url" content="http://chenyanning.top/2018/11/13/Spring事务传播机制/index.html">
 <meta property="og:site_name" content="cyn&#39;s Blog">
-<meta property="og:description" content="喜欢探索未知,保持好奇心!">
+<meta property="og:description" content="#Spring事务传播机制  Spring在TransactionDefinition接口中规定了7种类型的事务传播行为，它们规定了事务方法和事务方法发生嵌套调用时事务如何进行传播，即协调已经有事务标识的方法之间的发生调用时事务上下文规则（是否要有独立的事务隔离级别和锁）  ###事务传播行为种类    事务传播行为类型 说明     PROPAGATION_REQUIRED 如果当前没有事务，就">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-11-13T08:01:19.200Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cyn&#39;s Blog">
-<meta name="twitter:description" content="喜欢探索未知,保持好奇心!">
+<meta name="twitter:title" content="Spring事务传播机制">
+<meta name="twitter:description" content="#Spring事务传播机制  Spring在TransactionDefinition接口中规定了7种类型的事务传播行为，它们规定了事务方法和事务方法发生嵌套调用时事务如何进行传播，即协调已经有事务标识的方法之间的发生调用时事务上下文规则（是否要有独立的事务隔离级别和锁）  ###事务传播行为种类    事务传播行为类型 说明     PROPAGATION_REQUIRED 如果当前没有事务，就">
 
 
 
 
 
 
-  <link rel="canonical" href="http://chenyanning.top/">
+  <link rel="canonical" href="http://chenyanning.top/2018/11/13/Spring事务传播机制/">
 
 
 
@@ -134,7 +136,7 @@
   };
 </script>
 
-  <title>cyn's Blog</title>
+  <title>Spring事务传播机制 | cyn's Blog</title>
   
 
 
@@ -193,8 +195,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -235,7 +236,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
   </li>
@@ -332,9 +333,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -366,11 +367,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/13/Spring事务传播机制/" itemprop="url">
-                  Spring事务传播机制
-                </a>
+          <h1 class="post-title" itemprop="name headline">Spring事务传播机制
               
             
           </h1>
@@ -458,8 +455,7 @@
       
 
       
-        
-          <p>#Spring事务传播机制</p>
+        <p>#Spring事务传播机制</p>
 <blockquote>
 <p>Spring在TransactionDefinition接口中规定了7种类型的事务传播行为，它们规定了<strong><em>事务方法</em></strong>和<strong><em>事务方法发生嵌套调用时事务如何进行传播</em></strong>，即协调已经有事务标识的方法之间的发生调用时事务上下文规则（是否要有独立的事务隔离级别和锁）</p>
 </blockquote>
@@ -503,16 +499,7 @@
 </tbody>
 </table>
 <p>当使用PROPAGATION_NESTED时，底层的数据源必须基于JDBC 3.0，并且实现者需要支持保存点事务机制。 </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/11/13/Spring事务传播机制/" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-         
-          <!--/noindex-->
-        
+<a id="more"></a>
       
     </div>
 
@@ -530,196 +517,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://chenyanning.top/2018/11/12/事务隔离级别/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="cyn">
-      <meta itemprop="description" content="喜欢探索未知,保持好奇心!">
-      <meta itemprop="image" content="/images/mypicture.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="cyn's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/12/事务隔离级别/" itemprop="url">
-                  事务隔离级别
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-11-12 14:23:01" itemprop="dateCreated datePublished" datetime="2018-11-12T14:23:01+08:00">2018-11-12</time>
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Transaction/" itemprop="url" rel="index"><span itemprop="name">Transaction</span></a></span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/事务/" rel="tag"># 事务</a>
           
-
+            <a href="/tags/Spring/" rel="tag"># Spring</a>
           
-            
-          
-
-          
-          
-             <span id="/2018/11/12/事务隔离级别/" class="leancloud_visitors" data-flag-title="事务隔离级别">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数：</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <h1 id="MySQL–事务（Transaction）"><a href="#MySQL–事务（Transaction）" class="headerlink" title="MySQL–事务（Transaction）"></a>MySQL–事务（Transaction）</h1><h3 id="事务的基本要素（ACID）"><a href="#事务的基本要素（ACID）" class="headerlink" title="事务的基本要素（ACID）"></a>事务的基本要素（ACID）</h3><ul>
-<li><strong>原子性</strong>（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。</li>
-<li><strong>一致性</strong>（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏。比如A向B转账，不可能A扣了钱，B却没有收到。</li>
-<li><strong>隔离性</strong>（Isolation）：同一时间，只允许一个事务请求同一数据，不同的事务之间彼此没有任何干扰。比如A正在从一张银行卡中取钱，在A取钱的过程中，B不能向这张卡转账。</li>
-<li><strong>持久性</strong>（Durability）：事务完成后，事务对数据库的所有更新将被保存到数据库，不能回滚。</li>
-</ul>
-<h3 id="事务的并发问题"><a href="#事务的并发问题" class="headerlink" title="事务的并发问题"></a>事务的并发问题</h3><ul>
-<li><strong>脏读</strong>：事务A读取了事务B更新的数据，然后B回滚操作，那么A读取到的数据是脏数据。</li>
-<li><strong>不可重复读</strong>：事务A多次读取同一数据，事务B在事务A多次读取的过程中，对数据作了更新并提交，导致事务A多次读取同一数据时，结果不一致。</li>
-<li><strong>幻读</strong>：系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这就叫幻读。</li>
-</ul>
-<p><strong>小结</strong>：不可重复读和幻读很容易混淆，不可重复读侧重于修改，幻读侧重于新增和删除。解决不可重复读的问题只需要锁住满足条件的行，解决幻读需要锁表。</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/11/12/事务隔离级别/" rel="contents">
-                阅读全文 &raquo;
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/12/事务隔离级别/" rel="next" title="事务隔离级别">
+                <i class="fa fa-chevron-left"></i> 事务隔离级别
               </a>
-            </div>
-         
-          <!--/noindex-->
-        
-      
-    </div>
+            
+          </div>
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -729,14 +558,20 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MDk4OS8xNzUxNA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -974,6 +809,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 
@@ -986,6 +825,20 @@
 
 
 
+  
+    <script type="text/javascript">
+      window.livereOptions = {
+        refer: '2018/11/13/Spring事务传播机制/'
+      };
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
@@ -1328,43 +1181,42 @@
   
   <script>
     
-    function showTime(Counter) {
-      var entries = [];
+    function addCount(Counter) {
       var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
 
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { "$in": entries } }) })
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function ({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', `/classes/Counter/${counter.objectId}`, JSON.stringify({ time: { "__op":"Increment", "amount":1 } }))
+            
+            .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.time + 1);
+            })
+            
+            .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+            })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1}))
+                .done(function () {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function () {
+                  console.log('Failed to create');
+                });
+            
           }
         })
-        .fail(function ({ responseJSON }) {
-          console.log("LeanCloud Counter Error: " + responseJSON.code + " " + responseJSON.error);
-        });
+      .fail(function ({ responseJSON }) {
+        console.log('LeanCloud Counter Error:' + responseJSON.code + " " + responseJSON.error);
+      });
     }
     
 
@@ -1384,9 +1236,7 @@
             });
           };
           
-          if ($('.post-title-link').length >= 1) {
-            showTime(Counter);
-          }
+          addCount(Counter);
           
         })
     });
