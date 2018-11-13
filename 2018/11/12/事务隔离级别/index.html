@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="cyn&#39;s Blog">
 <meta property="og:description" content="MySQL–事务（Transaction）一、事务的基本要素（ACID） 原子性（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。 一致性（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏。比如A向B转账，不可能A扣了钱，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-12T10:40:25.973Z">
+<meta property="og:updated_time" content="2018-11-13T03:50:12.361Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="事务隔离级别">
 <meta name="twitter:description" content="MySQL–事务（Transaction）一、事务的基本要素（ACID） 原子性（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。 一致性（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏。比如A向B转账，不可能A扣了钱，">
@@ -392,12 +392,24 @@
                 
               
 
-              <time title="创建时间：2018-11-12 14:23:01 / 修改时间：18:40:25" itemprop="dateCreated datePublished" datetime="2018-11-12T14:23:01+08:00">2018-11-12</time>
+              <time title="创建时间：2018-11-12 14:23:01" itemprop="dateCreated datePublished" datetime="2018-11-12T14:23:01+08:00">2018-11-12</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-11-13 11:50:12" itemprop="dateModified" datetime="2018-11-13T11:50:12+08:00">2018-11-13</time>
               
             
           </span>
@@ -471,6 +483,7 @@
 <li><strong>幻读</strong>：系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这就叫幻读。</li>
 </ul>
 <p><strong>小结</strong>：不可重复读和幻读很容易混淆，不可重复读侧重于修改，幻读侧重于新增和删除。解决不可重复读的问题只需要锁住满足条件的行，解决幻读需要锁表。</p>
+<a id="more"></a>
 <h3 id="三、MySQL事务隔离级别"><a href="#三、MySQL事务隔离级别" class="headerlink" title="三、MySQL事务隔离级别"></a>三、MySQL事务隔离级别</h3><table>
 <thead>
 <tr>
