@@ -64,10 +64,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.5.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.5.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/mypicture.jpg?v=6.5.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.5.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/mypicture.jpg?v=6.5.0">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=6.5.0" color="#222">
@@ -349,6 +349,165 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://chenyanning.top/2018/11/13/test/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cyn">
+      <meta itemprop="description" content="喜欢探索未知,保持好奇心!">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cyn's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/13/test/" itemprop="url">
+                  test
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-13 10:50:58 / 修改时间：11:18:10" itemprop="dateCreated datePublished" datetime="2018-11-13T10:50:58+08:00">2018-11-13</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/11/13/test/" class="leancloud_visitors" data-flag-title="test">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+          
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/13/test/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://chenyanning.top/2018/11/12/事务隔离级别/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -464,87 +623,19 @@
       
         
           
-            <h1 id="MySQL–事务（Transaction）"><a href="#MySQL–事务（Transaction）" class="headerlink" title="MySQL–事务（Transaction）"></a>MySQL–事务（Transaction）</h1><h3 id="一、事务的基本要素（ACID）"><a href="#一、事务的基本要素（ACID）" class="headerlink" title="一、事务的基本要素（ACID）"></a>一、事务的基本要素（ACID）</h3><ul>
-<li><strong>原子性</strong>（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。</li>
-<li><strong>一致性</strong>（Consistency）：事务开始前和结束后，数据库的完整性约束没有被破坏。比如A向B转账，不可能A扣了钱，B却没有收到。</li>
-<li><strong>隔离性</strong>（Isolation）：同一时间，只允许一个事务请求同一数据，不同的事务之间彼此没有任何干扰。比如A正在从一张银行卡中取钱，在A取钱的过程中，B不能向这张卡转账。</li>
-<li><strong>持久性</strong>（Durability）：事务完成后，事务对数据库的所有更新将被保存到数据库，不能回滚。</li>
-</ul>
-<h3 id="二、事务的并发问题"><a href="#二、事务的并发问题" class="headerlink" title="二、事务的并发问题"></a>二、事务的并发问题</h3><ul>
-<li><strong>脏读</strong>：事务A读取了事务B更新的数据，然后B回滚操作，那么A读取到的数据是脏数据。</li>
-<li><strong>不可重复读</strong>：事务A多次读取同一数据，事务B在事务A多次读取的过程中，对数据作了更新并提交，导致事务A多次读取同一数据时，结果不一致。</li>
-<li><strong>幻读</strong>：系统管理员A将数据库中所有学生的成绩从具体分数改为ABCDE等级，但是系统管理员B就在这个时候插入了一条具体分数的记录，当系统管理员A改结束后发现还有一条记录没有改过来，就好像发生了幻觉一样，这就叫幻读。</li>
-</ul>
-<p><strong>小结</strong>：不可重复读和幻读很容易混淆，不可重复读侧重于修改，幻读侧重于新增和删除。解决不可重复读的问题只需要锁住满足条件的行，解决幻读需要锁表。</p>
-<h3 id="三、MySQL事务隔离级别"><a href="#三、MySQL事务隔离级别" class="headerlink" title="三、MySQL事务隔离级别"></a>三、MySQL事务隔离级别</h3><table>
-<thead>
-<tr>
-<th style="text-align:center">事务隔离级别</th>
-<th style="text-align:center">脏读</th>
-<th style="text-align:center">不可重复读</th>
-<th style="text-align:center">幻读</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">读未提交（read uncommitted）</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center">是</td>
-</tr>
-<tr>
-<td style="text-align:center">读已提交（read committed）</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center">是</td>
-</tr>
-<tr>
-<td style="text-align:center">可重复读（repeatable read）</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">是（mysql-InnoDB 否）</td>
-</tr>
-<tr>
-<td style="text-align:center">串性化（serializable）</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">否</td>
-<td style="text-align:center">否</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>read uncommitted：</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 事务A和事务B，事务A未提交的数据，事务B可以读取到</span><br><span class="line">- 这里读取到的数据叫做“脏数据”</span><br><span class="line">- 这种隔离级别最低，这种级别一般是在理论上存在，数据库隔离级别一般都高于该级别</span><br></pre></td></tr></table></figure>
-<ul>
-<li>read committed：</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- 事物A和事物B，事物A提交的数据，事物B才能读取到</span><br><span class="line">- 这种隔离级别高于读未提交</span><br><span class="line">- 换句话说，对方事物提交之后的数据，我当前事物才能读取到</span><br><span class="line">- 这种级别可以避免“脏数据”</span><br><span class="line">- 这种隔离级别会导致“不可重复读取”</span><br><span class="line">- Oracle默认隔离级别</span><br></pre></td></tr></table></figure>
-<ul>
-<li>repeatable read：</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">- 事务A和事务B，事务A提交之后的数据，事务B读取不到</span><br><span class="line">- 事务B是可重复读取数据</span><br><span class="line">- 这种隔离级别高于读已提交</span><br><span class="line">- 换句话说，对方提交之后的数据，我还是读取不到</span><br><span class="line">- 这种隔离级别可以避免“不可重复读取”，达到可重复读取</span><br><span class="line">- 比如1点和2点读到数据是同一个</span><br><span class="line">- MySQL默认级别</span><br><span class="line">- 虽然可以达到可重复读取，但是会导致“幻像读”</span><br><span class="line">- 可重复读的隔离级别下使用了MVCC机制，select操作不会更新版本号，是快照读（历史版本）；insert、update和delete会更新版本号，是当前读（当前版本）。</span><br></pre></td></tr></table></figure>
-<ul>
-<li>serializable：</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- 事务A和事务B，事务A在操作数据库时，事务B只能排队等待</span><br><span class="line">- 这种隔离级别很少使用，吞吐量太低，用户体验差</span><br><span class="line">- 这种级别可以避免“幻像读”，每一次读取的都是数据库中真实存在数据，事务A与事务B串行，而不并发</span><br></pre></td></tr></table></figure>
-<h3 id="四、基本操作"><a href="#四、基本操作" class="headerlink" title="四、基本操作"></a>四、基本操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 查询当前事务级别</span><br><span class="line">mysql&gt; select @@tx_isolation;</span><br><span class="line">- 设置隔离级别</span><br><span class="line">SET [GLOBAL | SESSION] TRANSACTION ISOLATION LEVEL &lt;isolation-level&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="五、补充"><a href="#五、补充" class="headerlink" title="五、补充"></a>五、补充</h3><ul>
-<li><p>事务隔离级别为读提交时，写数据只会锁住相应的行</p>
-</li>
-<li><p>事务隔离级别为可重复读时，如果检索条件有索引（包括主键索引）的时候，默认加锁方式是next-key锁；如果检索条件没有索引，更新数据时会锁住整张表。一个间隙被事务加了锁，其他事务是不能在这个间隙插入记录的，这样可以防止幻读。</p>
-</li>
-<li><p>事务隔离级别为串行化时，读写数据都会锁住整张表。</p>
-</li>
-<li><p>隔离级别越高，越能保证数据的完整性和一致性，但是对并发性能的影响也越大。</p>
-</li>
-<li><p><a href="https://blog.csdn.net/whoamiyang/article/details/51901888" target="_blank" rel="noopener">MySQL MVCCC实现机制</a></p>
-</li>
-<li><p><a href="https://blog.csdn.net/bigtree_3721/article/details/73731377" target="_blank" rel="noopener">关于next-key锁</a></p>
-</li>
-</ul>
-
+          MySQL–事务（Transaction）一、事务的基本要素（ACID）
+原子性（Atomicity）：事务开始后所有操作，要么全部做完，要么全部不做，不可能停滞在中间环节。事务执行过程中出错，会回滚到事务开始前的状态，所有的操作就想没有发生一样。也就是说事务是一个不可分割的整体。
+一致性（Cons
+          ...
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/12/事务隔离级别/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -624,7 +715,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
