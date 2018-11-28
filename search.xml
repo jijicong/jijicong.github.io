@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java8 函数式]]></title>
+    <url>%2F2018%2F11%2F28%2FJava8-%E5%87%BD%E6%95%B0%E5%BC%8F%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[git 整理]]></title>
+    <url>%2F2018%2F11%2F23%2Fgit-%E6%95%B4%E7%90%86%2F</url>
+    <content type="text"><![CDATA[git基本操作 git config --global [core.editor, user.name, user.email, merge.tool。。。。] [value] 用户配置 git config --list 获取配置信息 git diff --staged 比较暂存差异（add后的比较） git log -p -2 -p 选项展开显示每次提交的内容差异，用 -2 则仅显示最近的两次更新 git commit -v 更新内容提交 git commit --amend 撤消刚才的提交操作 git reset HEAD &lt;file&gt; 取消暂存 git remote add [shortname] [url] 添加远程仓库 git fetch [shortname] 从远程仓库抓取数据 git remote show [shortname] 查看远程仓库信息 git mergetool 可视化的合并工具 git branch [--merged, --no-merged] 已经（或尚未）与当前分支合并的分支]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Spring事务传播机制]]></title>
     <url>%2F2018%2F11%2F13%2FSpring%E4%BA%8B%E5%8A%A1%E4%BC%A0%E6%92%AD%E6%9C%BA%E5%88%B6%2F</url>
     <content type="text"><![CDATA[Spring事务传播机制 Spring在TransactionDefinition接口中规定了7种类型的事务传播行为，它们规定了事务方法和事务方法发生嵌套调用时事务如何进行传播，即协调已经有事务标识的方法之间的发生调用时事务上下文规则（是否要有独立的事务隔离级别和锁） 事务传播行为种类 事务传播行为类型 说明 PROPAGATION_REQUIRED 如果当前没有事务，就新建一个事务，如果已经存在一个事务中，加入到这个事务中。这是最常见的选择。 PROPAGATION_SUPPORTS 支持当前事务，如果当前没有事务，就以非事务方式执行。 PROPAGATION_MANDATORY 使用当前的事务，如果当前没有事务，就抛出异常。 PROPAGATION_REQUIRES_NEW 新建事务，如果当前存在事务，把当前事务挂起。 PROPAGATION_NOT_SUPPORTED 以非事务方式执行操作，如果当前存在事务，就把当前事务挂起。 PROPAGATION_NEVER 以非事务方式执行，如果当前存在事务，则抛出异常。 PROPAGATION_NESTED 如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则执行与PROPAGATION_REQUIRED类似的操作。 当使用PROPAGATION_NESTED时，底层的数据源必须基于JDBC 3.0，并且实现者需要支持保存点事务机制。]]></content>

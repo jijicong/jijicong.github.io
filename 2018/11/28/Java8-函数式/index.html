@@ -108,25 +108,24 @@
 
 
 
-  <meta name="description" content="Spring事务传播机制 Spring在TransactionDefinition接口中规定了7种类型的事务传播行为，它们规定了事务方法和事务方法发生嵌套调用时事务如何进行传播，即协调已经有事务标识的方法之间的发生调用时事务上下文规则（是否要有独立的事务隔离级别和锁）  事务传播行为种类   事务传播行为类型 说明     PROPAGATION_REQUIRED 如果当前没有事务，就新建一个事务">
-<meta name="keywords" content="事务,Spring">
+  <meta name="description" content="喜欢探索未知,保持好奇心!">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Spring事务传播机制">
-<meta property="og:url" content="http://chenyanning.top/2018/11/13/Spring事务传播机制/index.html">
+<meta property="og:title" content="Java8 函数式">
+<meta property="og:url" content="http://chenyanning.top/2018/11/28/Java8-函数式/index.html">
 <meta property="og:site_name" content="cyn&#39;s Blog">
-<meta property="og:description" content="Spring事务传播机制 Spring在TransactionDefinition接口中规定了7种类型的事务传播行为，它们规定了事务方法和事务方法发生嵌套调用时事务如何进行传播，即协调已经有事务标识的方法之间的发生调用时事务上下文规则（是否要有独立的事务隔离级别和锁）  事务传播行为种类   事务传播行为类型 说明     PROPAGATION_REQUIRED 如果当前没有事务，就新建一个事务">
+<meta property="og:description" content="喜欢探索未知,保持好奇心!">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-13T08:05:23.643Z">
+<meta property="og:updated_time" content="2018-11-28T06:54:43.616Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Spring事务传播机制">
-<meta name="twitter:description" content="Spring事务传播机制 Spring在TransactionDefinition接口中规定了7种类型的事务传播行为，它们规定了事务方法和事务方法发生嵌套调用时事务如何进行传播，即协调已经有事务标识的方法之间的发生调用时事务上下文规则（是否要有独立的事务隔离级别和锁）  事务传播行为种类   事务传播行为类型 说明     PROPAGATION_REQUIRED 如果当前没有事务，就新建一个事务">
+<meta name="twitter:title" content="Java8 函数式">
+<meta name="twitter:description" content="喜欢探索未知,保持好奇心!">
 
 
 
 
 
 
-  <link rel="canonical" href="http://chenyanning.top/2018/11/13/Spring事务传播机制/">
+  <link rel="canonical" href="http://chenyanning.top/2018/11/28/Java8-函数式/">
 
 
 
@@ -136,7 +135,7 @@
   };
 </script>
 
-  <title>Spring事务传播机制 | cyn's Blog</title>
+  <title>Java8 函数式 | cyn's Blog</title>
   
 
 
@@ -350,7 +349,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://chenyanning.top/2018/11/13/Spring事务传播机制/">
+    <link itemprop="mainEntityOfPage" href="http://chenyanning.top/2018/11/28/Java8-函数式/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cyn">
@@ -367,7 +366,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Spring事务传播机制
+          <h1 class="post-title" itemprop="name headline">Java8 函数式
               
             
           </h1>
@@ -392,31 +391,13 @@
                 
               
 
-              <time title="创建时间：2018-11-13 14:58:14" itemprop="dateCreated datePublished" datetime="2018-11-13T14:58:14+08:00">2018-11-13</time>
+              <time title="创建时间：2018-11-28 14:54:43" itemprop="dateCreated datePublished" datetime="2018-11-28T14:54:43+08:00">2018-11-28</time>
             
 
             
           </span>
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Transaction/" itemprop="url" rel="index"><span itemprop="name">Transaction</span></a></span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -424,7 +405,7 @@
 
           
           
-             <span id="/2018/11/13/Spring事务传播机制/" class="leancloud_visitors" data-flag-title="Spring事务传播机制">
+             <span id="/2018/11/28/Java8-函数式/" class="leancloud_visitors" data-flag-title="Java8 函数式">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -455,49 +436,7 @@
       
 
       
-        <h1 id="Spring事务传播机制"><a href="#Spring事务传播机制" class="headerlink" title="Spring事务传播机制"></a>Spring事务传播机制</h1><blockquote>
-<p>Spring在TransactionDefinition接口中规定了7种类型的事务传播行为，它们规定了<strong><em>事务方法</em></strong>和<strong><em>事务方法发生嵌套调用时事务如何进行传播</em></strong>，即协调已经有事务标识的方法之间的发生调用时事务上下文规则（是否要有独立的事务隔离级别和锁）</p>
-</blockquote>
-<h3 id="事务传播行为种类"><a href="#事务传播行为种类" class="headerlink" title="事务传播行为种类"></a>事务传播行为种类</h3><table>
-<thead>
-<tr>
-<th style="text-align:center">事务传播行为类型</th>
-<th style="text-align:center">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">PROPAGATION_REQUIRED</td>
-<td style="text-align:center">如果当前没有事务，就新建一个事务，如果已经存在一个事务中，加入到这个事务中。这是最常见的选择。</td>
-</tr>
-<tr>
-<td style="text-align:center">PROPAGATION_SUPPORTS</td>
-<td style="text-align:center">支持当前事务，如果当前没有事务，就以非事务方式执行。</td>
-</tr>
-<tr>
-<td style="text-align:center">PROPAGATION_MANDATORY</td>
-<td style="text-align:center">使用当前的事务，如果当前没有事务，就抛出异常。</td>
-</tr>
-<tr>
-<td style="text-align:center">PROPAGATION_REQUIRES_NEW</td>
-<td style="text-align:center">新建事务，如果当前存在事务，把当前事务挂起。</td>
-</tr>
-<tr>
-<td style="text-align:center">PROPAGATION_NOT_SUPPORTED</td>
-<td style="text-align:center">以非事务方式执行操作，如果当前存在事务，就把当前事务挂起。</td>
-</tr>
-<tr>
-<td style="text-align:center">PROPAGATION_NEVER</td>
-<td style="text-align:center">以非事务方式执行，如果当前存在事务，则抛出异常。</td>
-</tr>
-<tr>
-<td style="text-align:center">PROPAGATION_NESTED</td>
-<td style="text-align:center">如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则执行与PROPAGATION_REQUIRED类似的操作。</td>
-</tr>
-</tbody>
-</table>
-<p>当使用PROPAGATION_NESTED时，底层的数据源必须基于JDBC 3.0，并且实现者需要支持保存点事务机制。 </p>
-<a id="more"></a>
+        
       
     </div>
 
@@ -515,14 +454,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/事务/" rel="tag"># 事务</a>
-          
-            <a href="/tags/Spring/" rel="tag"># Spring</a>
-          
-        </div>
-      
 
       
       
@@ -532,8 +463,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/12/事务隔离级别/" rel="next" title="事务隔离级别">
-                <i class="fa fa-chevron-left"></i> 事务隔离级别
+              <a href="/2018/11/23/git-整理/" rel="next" title="git 整理">
+                <i class="fa fa-chevron-left"></i> git 整理
               </a>
             
           </div>
@@ -541,10 +472,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/23/git-整理/" rel="prev" title="git 整理">
-                git 整理 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -594,17 +521,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -685,22 +603,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring事务传播机制"><span class="nav-number">1.</span> <span class="nav-text">Spring事务传播机制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事务传播行为种类"><span class="nav-number">1.0.1.</span> <span class="nav-text">事务传播行为种类</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -857,7 +759,7 @@
   
     <script type="text/javascript">
       window.livereOptions = {
-        refer: '2018/11/13/Spring事务传播机制/'
+        refer: '2018/11/28/Java8-函数式/'
       };
       (function(d, s) {
         var j, e = d.getElementsByTagName(s)[0];
