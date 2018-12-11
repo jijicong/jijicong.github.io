@@ -108,25 +108,24 @@
 
 
 
-  <meta name="description" content="Java8 函数式方程Java中重要的函数接口   接口 参数 返回类型     Predicate&amp;lt;T&amp;gt; T boolean   Consumer&amp;lt;T&amp;gt; T viod   Function&amp;lt;T, R&amp;gt; T R   Supplier&amp;lt;T&amp;gt; None T   UnaryOperator&amp;lt;T&amp;gt; T T   BinaryOperator&amp;lt;T&amp;gt; (T, T) T">
-<meta name="keywords" content="java">
+  <meta name="description" content="喜欢探索未知,保持好奇心!">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java8 函数式">
-<meta property="og:url" content="http://chenyanning.top/2018/11/28/Java8-函数式/index.html">
+<meta property="og:title" content="shadowsocks 平台选型和shell脚本">
+<meta property="og:url" content="http://chenyanning.top/2018/12/07/shadowsocks-平台选型和shell脚本/index.html">
 <meta property="og:site_name" content="cyn&#39;s Blog">
-<meta property="og:description" content="Java8 函数式方程Java中重要的函数接口   接口 参数 返回类型     Predicate&amp;lt;T&amp;gt; T boolean   Consumer&amp;lt;T&amp;gt; T viod   Function&amp;lt;T, R&amp;gt; T R   Supplier&amp;lt;T&amp;gt; None T   UnaryOperator&amp;lt;T&amp;gt; T T   BinaryOperator&amp;lt;T&amp;gt; (T, T) T">
+<meta property="og:description" content="喜欢探索未知,保持好奇心!">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-29T12:26:36.452Z">
+<meta property="og:updated_time" content="2018-12-07T01:26:04.654Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java8 函数式">
-<meta name="twitter:description" content="Java8 函数式方程Java中重要的函数接口   接口 参数 返回类型     Predicate&amp;lt;T&amp;gt; T boolean   Consumer&amp;lt;T&amp;gt; T viod   Function&amp;lt;T, R&amp;gt; T R   Supplier&amp;lt;T&amp;gt; None T   UnaryOperator&amp;lt;T&amp;gt; T T   BinaryOperator&amp;lt;T&amp;gt; (T, T) T">
+<meta name="twitter:title" content="shadowsocks 平台选型和shell脚本">
+<meta name="twitter:description" content="喜欢探索未知,保持好奇心!">
 
 
 
 
 
 
-  <link rel="canonical" href="http://chenyanning.top/2018/11/28/Java8-函数式/">
+  <link rel="canonical" href="http://chenyanning.top/2018/12/07/shadowsocks-平台选型和shell脚本/">
 
 
 
@@ -136,7 +135,7 @@
   };
 </script>
 
-  <title>Java8 函数式 | cyn's Blog</title>
+  <title>shadowsocks 平台选型和shell脚本 | cyn's Blog</title>
   
 
 
@@ -350,7 +349,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://chenyanning.top/2018/11/28/Java8-函数式/">
+    <link itemprop="mainEntityOfPage" href="http://chenyanning.top/2018/12/07/shadowsocks-平台选型和shell脚本/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cyn">
@@ -367,7 +366,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Java8 函数式
+          <h1 class="post-title" itemprop="name headline">shadowsocks 平台选型和shell脚本
               
             
           </h1>
@@ -392,31 +391,13 @@
                 
               
 
-              <time title="创建时间：2018-11-28 14:54:43" itemprop="dateCreated datePublished" datetime="2018-11-28T14:54:43+08:00">2018-11-28</time>
+              <time title="创建时间：2018-12-07 09:26:04" itemprop="dateCreated datePublished" datetime="2018-12-07T09:26:04+08:00">2018-12-07</time>
             
 
             
           </span>
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -424,7 +405,7 @@
 
           
           
-             <span id="/2018/11/28/Java8-函数式/" class="leancloud_visitors" data-flag-title="Java8 函数式">
+             <span id="/2018/12/07/shadowsocks-平台选型和shell脚本/" class="leancloud_visitors" data-flag-title="shadowsocks 平台选型和shell脚本">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -455,95 +436,7 @@
       
 
       
-        <h1 id="Java8-函数式方程"><a href="#Java8-函数式方程" class="headerlink" title="Java8 函数式方程"></a>Java8 函数式方程</h1><h3 id="Java中重要的函数接口"><a href="#Java中重要的函数接口" class="headerlink" title="Java中重要的函数接口"></a>Java中重要的函数接口</h3><table>
-<thead>
-<tr>
-<th>接口</th>
-<th>参数</th>
-<th>返回类型</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Predicate&lt;T></td>
-<td>T</td>
-<td>boolean</td>
-</tr>
-<tr>
-<td>Consumer&lt;T></td>
-<td>T</td>
-<td>viod</td>
-</tr>
-<tr>
-<td>Function&lt;T, R&gt;</td>
-<td>T</td>
-<td>R</td>
-</tr>
-<tr>
-<td>Supplier&lt;T></td>
-<td>None</td>
-<td>T</td>
-</tr>
-<tr>
-<td>UnaryOperator&lt;T></td>
-<td>T</td>
-<td>T</td>
-</tr>
-<tr>
-<td>BinaryOperator&lt;T></td>
-<td>(T, T)</td>
-<td>T</td>
-</tr>
-</tbody>
-</table>
-<a id="more"></a>
-<h3 id="常用的流操作"><a href="#常用的流操作" class="headerlink" title="常用的流操作"></a>常用的流操作</h3><table>
-<thead>
-<tr>
-<th>方法</th>
-<th>作用</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>collect(toList())</td>
-<td>生成一个列表</td>
-<td>Stream.of(“a”, “b”, “c”).collect(Collectors.toList());</td>
-</tr>
-<tr>
-<td>map</td>
-<td>将一种类型转换成另外一种类型</td>
-<td>Stream.of(“a”, “b”, “c”).map(s -&gt; s.toUpperCase()). collect(Collectors.toList());</td>
-</tr>
-<tr>
-<td>filter</td>
-<td>过滤数据</td>
-<td>Stream.of(“a”, “1”, “b”).filter(v -&gt; isDigit(v.charAt(0))). collect(Collectors.toList());</td>
-</tr>
-<tr>
-<td>flatMap</td>
-<td>将多个Stream连接成一个Stream</td>
-<td>Stream.of(asList(1, 2), asList(3, 4)).flatMap(n -&gt; n.stream()).collect(Collectors.toList());</td>
-</tr>
-<tr>
-<td>max/min</td>
-<td>求最大和最小值</td>
-<td>Stream.of(“a”, “ab”, “abc”).max(Comparator.comparing(v -&gt; v.length())).get());</td>
-</tr>
-<tr>
-<td>reduce</td>
-<td>累加操作</td>
-<td>Steam.of(1, 2, 3).reduce(Integer::sum);</td>
-</tr>
-</tbody>
-</table>
-<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><ul>
-<li><a href="https://www.cnblogs.com/zhangboyu/p/7580262.html" target="_blank" rel="noopener">Java8 Optional</a></li>
-<li><a href="https://www.cnblogs.com/runningTurtle/p/7092632.html" target="_blank" rel="noopener">Java8 @FunctionalInterface</a></li>
-<li><a href="https://www.cnblogs.com/Dorae/p/7779246.html" target="_blank" rel="noopener">Stream 原理</a></li>
-</ul>
-
+        
       
     </div>
 
@@ -561,12 +454,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/java/" rel="tag"># java</a>
-          
-        </div>
-      
 
       
       
@@ -576,8 +463,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/23/git-整理/" rel="next" title="git 整理">
-                <i class="fa fa-chevron-left"></i> git 整理
+              <a href="/2018/11/30/Linux-整理/" rel="next" title="Linux 整理">
+                <i class="fa fa-chevron-left"></i> Linux 整理
               </a>
             
           </div>
@@ -585,10 +472,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/30/RocketMQ-Spring-boot-实现/" rel="prev" title="RocketMQ Spring-boot 实现">
-                RocketMQ Spring-boot 实现 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -638,17 +521,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -733,22 +607,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java8-函数式方程"><span class="nav-number">1.</span> <span class="nav-text">Java8 函数式方程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java中重要的函数接口"><span class="nav-number">1.0.1.</span> <span class="nav-text">Java中重要的函数接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的流操作"><span class="nav-number">1.0.2.</span> <span class="nav-text">常用的流操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#补充"><span class="nav-number">1.0.3.</span> <span class="nav-text">补充</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -905,7 +763,7 @@
   
     <script type="text/javascript">
       window.livereOptions = {
-        refer: '2018/11/28/Java8-函数式/'
+        refer: '2018/12/07/shadowsocks-平台选型和shell脚本/'
       };
       (function(d, s) {
         var j, e = d.getElementsByTagName(s)[0];
