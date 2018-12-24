@@ -253,7 +253,7 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">5</span></a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">9</span></a>
   </li>
         
         
@@ -261,7 +261,7 @@
           
           <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">5</span></a>
   </li>
         
         
@@ -401,6 +401,24 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/工具/" itemprop="url" rel="index"><span itemprop="name">工具</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -559,6 +577,24 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -706,6 +742,24 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/工具/" itemprop="url" rel="index"><span itemprop="name">工具</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -745,10 +799,55 @@
 
       
         
+          <h1 id="坐标与依赖"><a href="#坐标与依赖" class="headerlink" title="坐标与依赖"></a>坐标与依赖</h1><blockquote>
+<p>了能够自动化地解析任何一个Java构件, Maven必须将它们<strong>唯一</strong>标识, 这就是依赖管理的底层基础-<strong>坐标</strong>.</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.commons<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>commons-lang3<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">version</span>&gt;</span>3.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">packaging</span>&gt;</span>jar<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>元素</th>
+<th>描述</th>
+<th>ext</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>groupId</td>
+<td>定义当前模块隶属的实际Maven项目, 表示方式与Java包类似</td>
+<td>groupId不应直接对应项目隶属的公司/组织(一个公司/组织下可能会有很多的项目)</td>
+</tr>
+<tr>
+<td>artifactId</td>
+<td>定义实际项目中的一个Maven模块</td>
+<td>推荐使用项目名作为artifactId前缀, 如:commons-lang3以commons作为前缀(因为Maven打包默认以artifactId作为前缀)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>定义当前项目所处版本(如1.0-SNAPSHOT、4.2.7.RELEASE、1.2.15、14.0.1-h-3 等)</td>
+<td>Maven版本号定义约定: &lt;主版本&gt;.&lt;次版本&gt;.&lt;增量版本&gt;-&lt;里程碑版本&gt;</td>
+</tr>
+<tr>
+<td>packaging</td>
+<td>定义Maven项目打包方式, 通常打包方式与所生成构件扩展名对应</td>
+<td>有jar(默认)、war、pom、maven-plugin等.</td>
+</tr>
+<tr>
+<td>classifier</td>
+<td>用来帮助定义构建输出的一些附属构件(如javadoc、sources)</td>
+<td>不能直接定义项目的classifier(因为附属构件不是由项目默认生成, 须有附加插件的帮助)</td>
+</tr>
+</tbody>
+</table>
+          <!--noindex-->
           
-            <a id="more"></a>
-
-          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/11/30/Maven-整理/" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+         
+          <!--/noindex-->
         
       
     </div>
@@ -852,6 +951,24 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/spring/" itemprop="url" rel="index"><span itemprop="name">spring</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1774,7 +1891,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1797,7 +1918,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
