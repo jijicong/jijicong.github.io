@@ -1,11 +1,11 @@
 ---
 title: Spring事务传播机制
-date: 2018-11-13 14:58:14
+date: 2018-11-13T14:58:14.000Z
 tags:
-- 事务
-- Spring
+  - 事务
+  - Spring
 categories:
-- Transaction
+  - Transaction
 ---
 
 # Spring事务传播机制
@@ -26,7 +26,7 @@ categories:
 |     PROPAGATION_NEVER     |       以非事务方式执行，如果当前存在事务，则抛出异常。       |
 |    PROPAGATION_NESTED     | 如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则执行与PROPAGATION_REQUIRED类似的操作。 |
 
-当使用PROPAGATION_NESTED时，底层的数据源必须基于JDBC 3.0，并且实现者需要支持保存点事务机制。 
+当使用PROPAGATION_NESTED时，底层的数据源必须基于JDBC 3.0，并且实现者需要支持保存点事务机制。
 
 
 
