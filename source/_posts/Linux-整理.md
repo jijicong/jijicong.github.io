@@ -5,17 +5,6 @@ tags: linux
 categories: linux
 ---
 
+![linux](/Linux-整理/img.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- more -->
+[命令行网站](http://man.linuxde.net/)

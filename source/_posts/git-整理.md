@@ -316,4 +316,7 @@ git mergetool
 
 # 生成一个可供发布的压缩包
 git archive
+
+# 清除本地缓存
+git rm -r --cached .
 ```
